@@ -1,4 +1,4 @@
-document.
+$(document).ready(function() {
 // 1. Initialize Firebase
 var config = {
     apiKey: "AIzaSyBLbM7L6NqAf8UnSe1vBXHDFrLv2L3dOJI",
@@ -105,5 +105,5 @@ database.ref().on("child_added", function(childSnapshot) {
 
 }, function(errorObject){
         console.log("Read failed: " + errorObject.code)
-    }
-);
+    });
+});
